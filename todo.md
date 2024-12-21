@@ -1,0 +1,6 @@
+- [ ] Structure changes (root project folder).
+- [ ] Tools with new structure.
+- [ ] Identity field.
+- [ ] Identity map.
+- [ ] Mappers.
+- [ ] Eager loading.
