@@ -1,0 +1,24 @@
+{
+    "name": "larahex/larahex",
+    "version": "0.1.0",
+    "type": "project",
+    "license": "proprietary",
+    "require": {
+        "symfony/uid": "^7.2"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^7.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Larahex\\": "/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Osama Aldemeery",
+            "email": "aldemeery@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable"
+}
