@@ -7,6 +7,7 @@ use Larahex\Contracts\TodoService as TodoServiceContract;
 use Larahex\Contracts\UserRepository;
 use Larahex\Entities\Todo;
 use Symfony\Component\Uid\Uuid;
+use Psl\Type;
 
 class TodoService implements TodoServiceContract
 {
@@ -35,7 +36,7 @@ class TodoService implements TodoServiceContract
 
     public function list(Uuid $userId): array
     {
-        return $this->todos->findAllByUserId($userId);
+        return Type\vec(Type\instance_of(Todo::class))->assert($this->todos->findAllByUserId($userId));
     }
 
     public function complete(Uuid $id): Todo
